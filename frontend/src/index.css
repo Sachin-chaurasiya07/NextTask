@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #070B11;
+    color: #E2E8F0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track { background: #0D1219; }
+  ::-webkit-scrollbar-thumb { background: #1E2A3A; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #38BDF8; }
+
+  input, textarea, select {
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-hover text-black font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95;
+  }
+  .btn-ghost {
+    @apply text-muted hover:text-white hover:bg-bg-elevated px-4 py-2 rounded-xl transition-all duration-200;
+  }
+  .card {
+    @apply bg-bg-secondary border border-border rounded-2xl;
+  }
+  .input-field {
+    @apply w-full bg-bg-card border border-border rounded-xl px-4 py-3 text-white placeholder-muted focus:outline-none focus:border-accent transition-colors duration-200;
+  }
+  .label {
+    @apply text-sm font-medium text-slate-400 mb-1.5 block;
+  }
+}
