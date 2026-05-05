@@ -2,6 +2,8 @@
 
 A production-ready full-stack task management application built to showcase modern full-stack development skills.
 
+Live Link : https://next-task-two-tawny.vercel.app/register
+
 ## Tech Stack
 
 **Frontend**
